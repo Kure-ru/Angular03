@@ -1,0 +1,13 @@
+<main>
+  <h1>Popcorn Picks 🍿</h1>
+  <h2>Vote pour ton film préféré</h2>
+
+  <button (click)="toggleShowMovies()">VOTE !</button>
+
+  <ul *appShowMovies="showMovies">
+    <li appHighlight >The Godfather</li>
+    <li>The Shawshank Redemption</li>
+    <li>Gone with the Wind</li>
+    <li>Casablanca</li>
+  </ul>
+</main>
